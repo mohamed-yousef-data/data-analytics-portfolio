@@ -16,6 +16,7 @@ I specialize in transforming operational, laboratory, and financial data into me
 ## Featured Projects
 
 ### 1. O&M Contract Financial Dashboard
+![O&M Contract Financial Dashboard](Screenshot%202026-10-10%2023-02-49.png)
 
 A Power BI dashboard designed to monitor the financial performance of a 36-month Operations & Maintenance contract.
 
