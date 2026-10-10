@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O&M Financial Dashboard | Mohamed Yousef</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f3f6fb;
+  color: #243247;
+  line-height: 1.7;
+}
+header {
+  background: linear-gradient(120deg,#102c54,#1765a3);
+  color: white;
+  padding: 55px 20px;
+  text-align: center;
+}
+header h1 { margin: 0; font-size: 36px; }
+header p { margin: 10px 0 0; }
+main { max-width: 1050px; margin: auto; padding: 30px 20px; }
+section {
+  background: white;
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 18px rgba(20,45,75,.07);
+}
+h2 { color: #174d83; margin-top: 0; }
+.dashboard {
+  width: 100%;
+  border-radius: 9px;
+  border: 1px solid #ddd;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 15px;
+}
+.kpi {
+  background: #eaf2fc;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  font-weight: 600;
+  color: #174d83;
+}
+.insight {
+  padding: 14px 18px;
+  border-left: 4px solid #1765a3;
+  background: #f5f9ff;
+  margin: 14px 0;
+  border-radius: 5px;
+}
+a { color: #1765a3; }
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+footer {
+  text-align: center;
+  background: #102c54;
+  color: white;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>O&M Contract Financial Dashboard</h1>
+  <p>Power BI | Financial Analytics | Contract Performance</p>
+</header>
+
+<main>
+<a class="back" href="index.html">&larr; Back to Portfolio</a>
+
+<section>
+  <h2>Project Overview</h2>
+  <p>
+    An interactive Power BI dashboard designed to monitor
+    the financial performance of a 36-month Operations
+    &amp; Maintenance contract.
+  </p>
+  <p>
+    The project combines contract management knowledge
+    with data analytics to support informed financial
+    decisions.
+  </p>
+</section>
+
+<section>
+  <h2>Dashboard Preview</h2>
+  <img class="dashboard"
+       src="Screenshot%202026-10-10%2023-02-49.png"
+       alt="O&M Financial Dashboard">
+</section>
+
+<section>
+  <h2>Key Performance Indicators</h2>
+  <div class="grid">
+    <div class="kpi">Contract Value</div>
+    <div class="kpi">Financial Progress</div>
+    <div class="kpi">Time Progress</div>
+    <div class="kpi">Monthly Net Statements</div>
+    <div class="kpi">Deductions &amp; Penalties</div>
+    <div class="kpi">Spare Parts Budget Utilization</div>
+  </div>
+</section>
+
+<section>
+  <h2>Business Problem</h2>
+  <p>
+    Managing a long-term O&M contract requires more than
+    tracking monthly payments. Decision-makers need to
+    understand spending patterns, contract utilization,
+    penalties, and the relationship between elapsed
+    time and financial progress.
+  </p>
+</section>
+
+<section>
+  <h2>Key Analytical Insights</h2>
+
+  <div class="insight">
+    <strong>Financial vs. Time Progress</strong>
+    <p>
+      Financial progress should be compared with elapsed
+      contract time, but higher spending does not
+      necessarily mean better operational performance.
+    </p>
+  </div>
+
+  <div class="insight">
+    <strong>Spare Parts Expenditure</strong>
+    <p>
+      Spare parts are purchased based on operational needs.
+      Separating their costs from recurring O&M expenditure
+      supports a more accurate financial assessment.
+    </p>
+  </div>
+
+  <div class="insight">
+    <strong>Penalties Monitoring</strong>
+    <p>
+      Monthly penalty trends highlight periods that
+      require further investigation. Additional
+      root-cause data would help identify preventive actions.
+    </p>
+  </div>
+
+  <div class="insight">
+    <strong>Monthly Financial Trends</strong>
+    <p>
+      Comparing monthly net statements helps identify
+      unusual changes and investigate their financial drivers.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Tools &amp; Technologies</h2>
+  <p>Power BI | Excel | Power Query | DAX | Data Modeling</p>
+</section>
+
+<section>
+  <h2>Business Value</h2>
+  <p>
+    The dashboard provides a consolidated view of contract
+    financial performance, enabling more transparent
+    monitoring, earlier identification of unusual trends,
+    and better-informed management decisions.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  Mohamed Yousef | Data Analytics Portfolio
+</footer>
+
+</body>
+</html>
