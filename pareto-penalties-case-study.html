@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Power BI Pareto analysis of operations and maintenance contract penalties, with safety violation root-cause insights.">
+  <title>Pareto Penalties Case Study | Mohamed Yousef</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f4f7fb; color: #243247; line-height: 1.7; }
+    header { background: linear-gradient(120deg, #102c54, #1765a3); color: white; text-align: center; padding: 55px 20px; }
+    header h1 { margin: 0 0 10px; font-size: clamp(27px, 4vw, 36px); }
+    header p { margin: 0; font-size: 17px; }
+    main { max-width: 1050px; margin: auto; padding: 35px 20px; }
+    .card { background: white; padding: 28px; border-radius: 14px; margin-bottom: 25px; box-shadow: 0 5px 20px rgba(20,45,75,.08); }
+    h2 { color: #174d83; margin-top: 0; }
+    .dashboard-image { width: 100%; height: auto; border-radius: 10px; border: 1px solid #e1e6ed; display: block; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 15px; }
+    .kpi { background: #eef5fc; padding: 20px; border-radius: 10px; text-align: center; }
+    .kpi strong { display: block; color: #174d83; font-size: 25px; }
+    .kpi span { font-size: 14px; }
+    .button { display: inline-block; background: #1765a3; color: white; padding: 11px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    .button:hover { background: #102c54; }
+    .note { font-size: 14px; color: #59697c; }
+    footer { text-align: center; background: #102c54; color: white; padding: 22px; }
+    @media(max-width: 600px) { .card { padding: 20px; } header { padding: 42px 16px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pareto Analysis of Contract Penalties</h1>
+    <p>Power BI | Operations &amp; Maintenance | Safety Performance</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Case Study Overview</h2>
+      <p>This case study uses Power BI and the Pareto principle to identify which types of operations and maintenance contract penalties have the greatest financial impact, then drills down into the leading safety-related causes.</p>
+      <p class="note"><strong>Data note:</strong> The dataset is simulated for demonstration and portfolio purposes; findings are illustrative, not actual company penalty records.</p>
+    </section>
+    <section class="card">
+      <h2>Pareto Charts</h2>
+      <img class="dashboard-image" src="pareto-penalties.png" alt="Two Power BI Pareto charts showing penalty categories and safety violation reasons" loading="lazy">
+      <p class="note">The first chart ranks penalty categories; the second investigates the drivers within safety violations.</p>
+    </section>
+    <section class="card">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpis">
+        <div class="kpi"><strong>244,791.25</strong><span>Total Penalties (SAR)</span></div>
+        <div class="kpi"><strong>63.32%</strong><span>Safety Share of All Penalties</span></div>
+        <div class="kpi"><strong>155,000</strong><span>Safety Penalties (SAR)</span></div>
+        <div class="kpi"><strong>74.19%</strong><span>Missing PPE Share of Safety Penalties</span></div>
+      </div>
+    </section>
+    <section class="card">
+      <h2>Analytical Approach</h2>
+      <ul>
+        <li>Group penalty amounts by category and sort them from highest to lowest.</li>
+        <li>Calculate each category's contribution and the cumulative percentage.</li>
+        <li>Identify the largest financial exposure: safety violations.</li>
+        <li>Drill into safety violation reasons using a second Pareto chart.</li>
+        <li>Translate the findings into targeted preventive and corrective actions.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Key Findings</h2>
+      <p><strong>Safety violations</strong> account for <strong>SAR 155,000 (63.32%)</strong> of the <strong>SAR 244,791.25</strong> total. Combined with sample non-compliance, the cumulative contribution reaches <strong>79.57%</strong>.</p>
+      <p>Within safety penalties, <strong>Missing PPE</strong> contributes <strong>SAR 115,000 (74.19%)</strong>. Adding <strong>LOTO violations</strong> increases the cumulative share to <strong>90.32%</strong>.</p>
+      <p>These concentrations indicate where investigation and improvement efforts could be prioritized. The 80/20 rule is a guiding heuristic, not an exact threshold that every dataset must follow.</p>
+    </section>
+    <section class="card">
+      <h2>Recommended Actions</h2>
+      <ul>
+        <li><strong>PPE:</strong> Review availability, suitability, use, inspections, and workforce training.</li>
+        <li><strong>LOTO:</strong> Verify isolation procedures, authorization, competency, and field compliance.</li>
+        <li><strong>CAPA:</strong> Investigate recurring violations, assign owners, and verify corrective-action effectiveness.</li>
+        <li><strong>KPIs:</strong> Track safety penalty value, repeat violations, PPE compliance, and CAPA closure rates over time.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Tools &amp; Techniques</h2>
+      <p>Power BI | Excel | Power Query | DAX | Pareto Analysis | Root-Cause Prioritization | KPI Development</p>
+    </section>
+    <section class="card">
+      <h2>Business Value</h2>
+      <p>The analysis demonstrates how a financial penalty register can support operational decision-making by focusing attention on high-impact categories and specific, actionable safety issues.</p>
+    </section>
+    <a class="button" href="index.html">← Back to Portfolio</a>
+  </main>
+  <footer>Mohamed Yousef | Data Analytics Portfolio</footer>
+</body>
+</html>
