@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Yousef | Data Analytics Portfolio</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f4f7fb; color: #243247; line-height: 1.7; }
+header { background: linear-gradient(120deg, #102c54, #1765a3); color: white; text-align: center; padding: 75px 20px; }
+header h1 { font-size: 42px; margin: 0 0 10px; } header p { font-size: 18px; margin: 0; }
+main { max-width: 1050px; margin: auto; padding: 35px 20px; }
+section { margin-bottom: 40px; } h2 { color: #174d83; }
+.card { background: white; padding: 28px; border-radius: 14px; box-shadow: 0 5px 20px rgba(20, 45, 75, 0.08); }
+.skills { display: flex; flex-wrap: wrap; gap: 10px; }
+.skills span { background: #e4effa; color: #174d83; padding: 7px 14px; border-radius: 20px; font-weight: 600; }
+.project-image { width: 100%; height: auto; border: 1px solid #e1e6ed; border-radius: 8px; }
+a { color: #1765a3; }
+.project-button { display: inline-block; background: #1765a3; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+.project-button:hover { background: #102c54; }
+footer { text-align: center; background: #102c54; color: white; padding: 22px; }
+@media(max-width:600px) { header { padding: 48px 16px; } header h1 { font-size: 32px; } .card { padding: 20px; } }
+</style>
+</head>
+<body>
+<header><h1>Mohamed Yousef</h1><p>Data Analytics | Power BI | Water &amp; Wastewater Operations</p></header>
+<main>
+<section class="card"><h2>About Me</h2><p>Chemistry graduate with 10 years of experience in the water and wastewater sector, combining operational expertise with data analytics to support better decisions.</p></section>
+<section class="card"><h2>Technical Skills</h2><div class="skills"><span>Power BI</span><span>Excel</span><span>Power Query</span><span>DAX</span><span>Data Modeling</span><span>KPI Development</span></div></section>
+<section class="card"><h2>Featured Projects</h2></section>
+<section class="card">
+<h2>Water &amp; Wastewater Operational Performance Dashboard</h2>
+<img class="project-image" src="water-overview.png" alt="Overview of water and wastewater operational performance dashboard" loading="lazy">
+<p>An interactive, four-page Power BI dashboard comparing operational performance, water quality, daily trends, and environmental sustainability indicators across three treatment plants.</p>
+<p><a class="project-button" href="water-wastewater-operational-dashboard.html">View Project Details →</a></p>
+<ul><li>Plant-level operational KPI comparisons and hydraulic loading</li><li>COD/BOD removal efficiency and effluent quality monitoring</li><li>Energy intensity (kWh/m³), daily trends, and sludge production</li><li>Tree planting, green area, and estimated CO₂ sequestration</li></ul>
+</section>
+<section class="card">
+<h3>O&amp;M Contract Financial Dashboard</h3>
+<img class="project-image" src="Screenshot%202026-10-10%2023-02-49.png" alt="O&amp;M Financial Dashboard">
+<p>An interactive Power BI dashboard for monitoring financial performance throughout a 36-month Operations &amp; Maintenance contract.</p>
+<p><a class="project-button" href="om-contract-dashboard.html">View Project Details →</a></p>
+<ul><li>Financial progress vs. time progress</li><li>Monthly net statements</li><li>Deductions and penalties</li><li>Spare parts budget utilization</li><li>Contract financial performance</li></ul>
+<p><a href="https://github.com/mohamed-yousef-data/data-analytics-portfolio">View Project on GitHub</a></p>
+</section>
+<section class="card">
+<h2>Contract Penalties Analysis</h2>
+<img class="project-image" src="Screenshot%202026-10-12%2011-19-42%20linked%20in.png" alt="Power BI Contract Penalties Analysis Dashboard" loading="lazy">
+<p><a class="project-button" href="contract-penalties-analysis.html">View Project Details →</a></p>
+<p>An interactive Power BI dashboard designed to analyze contract penalties across wastewater treatment plants, identify major causes of non-compliance, and support operational improvement decisions.</p>
+<h3>Key Insights</h3><ul><li>Total penalties analyzed: SAR 95,105.99</li><li>Total penalty cases: 9</li><li>FOG-related penalties: 81.26% of total penalty value</li><li>Pareto analysis of water quality parameters</li><li>Penalty comparison across three treatment plants</li><li>Monthly penalty trends and detailed records</li></ul>
+<h3>Tools &amp; Techniques</h3><p>Power BI | Power Query | DAX | Data Modeling | Pareto Analysis | KPI Development</p>
+</section>
+<section class="card">
+<h2>O&amp;M Penalties | Pareto Analysis Case Study</h2>
+<img class="project-image" src="pareto-penalties.png" alt="Pareto Analysis of O&amp;M Contract Penalties" loading="lazy">
+<p>A Power BI case study applying Pareto Analysis to Operations &amp; Maintenance contract penalties to identify major cost drivers and prioritize corrective actions.</p>
+<p><a class="project-button" href="pareto-penalties-case-study.html">View Case Study →</a></p>
+<h3>Key Insights</h3><ul><li>Total penalties analyzed: SAR 244,791.25</li><li>Safety violations account for 63.32% of penalties</li><li>Missing PPE represents 74.19% of safety penalties</li><li>Safety and sample non-compliance account for 79.57% combined</li><li>Priority actions include PPE compliance, LOTO training, and CAPA</li></ul>
+<h3>Tools &amp; Techniques</h3><p>Power BI | DAX | Pareto Analysis | Root Cause Analysis | KPI Development | Operational Analytics</p>
+<p><small>Illustrative dataset used for analytical demonstration.</small></p>
+</section>
+<section class="card">
+<h2>CFTC Dashboard | When Data Challenges Expectations</h2>
+<img class="project-image" src="cftc-dashboard.png" alt="Power BI dashboard analyzing CFTC speculative positions for gold, silver, bitcoin and crude oil" loading="lazy">
+<p>I spent two days building a Power BI dashboard to explore whether CFTC speculative positioning could help identify gold market tops and bottoms. The results were disappointing: Pearson correlation was weak and sometimes inverse, and the analysis did not reveal a reliable predictive signal.</p>
+<p>Rather than hiding that result, this case study shares the original hypothesis, the analytical process, and what I learned when the data challenged my expectations.</p>
+<p><a class="project-button" href="cftc-analysis.html">View Case Study →</a></p>
+<h3>Key Insights</h3>
+<ul><li>Compared weekly Long, Short, and Net speculative positions with market prices</li><li>Explored Gold, Silver, Bitcoin, and Crude Oil markets</li><li>Tested the relationship using Pearson correlation</li><li>Found no dependable standalone signal for identifying gold market tops or bottoms in the analyzed period</li></ul>
+<h3>Tools &amp; Techniques</h3><p>Power BI | Excel | Power Query | DAX | Data Modeling | Pearson Correlation | Hypothesis Testing</p>
+</section>
+<section class="card"><h2>Contact</h2>
+<p><a href="https://www.linkedin.com/in/mohamed-youssuf-793082131/" target="_blank" rel="noopener noreferrer">LinkedIn Profile ↗</a></p>
+<p><a href="https://github.com/mohamed-yousef-data" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a></p>
+</section>
+</main><footer>Mohamed Yousef | Data Analytics Portfolio</footer>
+</body></html>
