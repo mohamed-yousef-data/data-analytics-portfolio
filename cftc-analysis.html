@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Power BI case study exploring CFTC Commitments of Traders positioning and weekly market prices—and what happened when the expected correlation did not appear.">
+  <title>CFTC Market Analysis | Mohamed Yousef</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f4f7fb; color: #243247; line-height: 1.7; }
+    header { background: linear-gradient(120deg, #102c54, #1765a3); color: white; text-align: center; padding: 55px 20px; }
+    header h1 { margin: 0 0 10px; font-size: clamp(27px, 4vw, 36px); }
+    header p { margin: 0; font-size: 17px; }
+    main { max-width: 1050px; margin: auto; padding: 35px 20px; }
+    .card { background: white; padding: 28px; border-radius: 14px; margin-bottom: 25px; box-shadow: 0 5px 20px rgba(20,45,75,.08); }
+    h2 { color: #174d83; margin-top: 0; }
+    .dashboard-image { width: 100%; height: auto; border-radius: 10px; border: 1px solid #e1e6ed; display: block; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 15px; }
+    .kpi { background: #eef5fc; padding: 20px; border-radius: 10px; text-align: center; }
+    .kpi strong { display: block; color: #174d83; font-size: 25px; }
+    .kpi span { font-size: 14px; }
+    .button { display: inline-block; background: #1765a3; color: white; padding: 11px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    .button:hover { background: #102c54; }
+    .note { font-size: 14px; color: #59697c; }
+    a { color: #1765a3; }
+    footer { text-align: center; background: #102c54; color: white; padding: 22px; }
+    @media(max-width: 600px) { .card { padding: 20px; } header { padding: 42px 16px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CFTC Dashboard | When Data Challenges Expectations</h1>
+    <p>Power BI | Commitments of Traders | Financial Market Analytics</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>The Idea: Could Positioning Reveal Market Turning Points?</h2>
+      <p>I spent two days building a Power BI dashboard to explore a question: could changes in speculative futures positioning help identify potential tops and bottoms in gold prices?</p>
+      <p>The dashboard brings together CFTC Commitments of Traders (COT) data and weekly closing prices for Gold, Silver, Bitcoin, and Crude Oil.</p>
+    </section>
+    <section class="card">
+      <h2>The Dashboard</h2>
+      <img class="dashboard-image" src="cftc-dashboard.png" alt="Power BI dashboard analyzing CFTC long and short positions across four markets" loading="lazy">
+      <p class="note">Interactive asset and week selections, positioning metrics, and price comparisons. Screenshot shown for portfolio demonstration.</p>
+    </section>
+    <section class="card">
+      <h2>Project at a Glance</h2>
+      <div class="kpis">
+        <div class="kpi"><strong>4</strong><span>Markets Analyzed</span></div>
+        <div class="kpi"><strong>Weekly</strong><span>COT &amp; Price Observations</span></div>
+        <div class="kpi"><strong>2 Days</strong><span>Building &amp; Exploring</span></div>
+        <div class="kpi"><strong>Weak</strong><span>Observed Gold Correlation</span></div>
+      </div>
+    </section>
+    <section class="card">
+      <h2>Analytical Approach</h2>
+      <ul>
+        <li>Prepared historical CFTC positioning data for four markets.</li>
+        <li>Combined weekly positioning observations with weekly closing-price data for exploratory comparison.</li>
+        <li>Built interactive Power BI visuals for Long, Short, Net Position, and week-over-week changes.</li>
+        <li>Compared speculative positioning with gold price behavior and explored Pearson correlation.</li>
+        <li>Evaluated whether the observed relationships supported the original market-timing hypothesis.</li>
+      </ul>
+      <p class="note"><strong>Timing note:</strong> COT positions are reported as of Tuesday, while the price series used Friday closes. These are different observation dates; a same-week comparison should not be interpreted as a validated predictive test.</p>
+    </section>
+    <section class="card">
+      <h2>The Disappointing Discovery</h2>
+      <p>I expected to uncover a useful signal. Instead, the relationship between the positioning measures I tested and gold's weekly closing prices appeared weak—and at times inverse.</p>
+      <p>Even after exploring Pearson correlation, I did not find a dependable standalone signal for calling gold market tops or bottoms in the dataset examined.</p>
+      <p><strong>Two days of work, and no reliable market-timing signal.</strong> It was disappointing, but it was also an important analytical result.</p>
+    </section>
+    <section class="card">
+      <h2>What the Result Does—and Doesn't—Mean</h2>
+      <p>The analysis did not support my initial hypothesis within the measures and period examined. It does not establish that COT data has no value, or that no relationship could emerge using different lags, transformations, or market conditions.</p>
+      <p>Correlation alone does not demonstrate predictive power. A stronger test would account for release timing, potential lags, out-of-sample evaluation, and alternative measures such as changes in positioning rather than levels.</p>
+    </section>
+    <section class="card">
+      <h2>What I Learned</h2>
+      <p>Not every dataset confirms the story we hope to find. Good analysis means testing an idea, questioning the evidence, and reporting the result—even when it is disappointing.</p>
+      <p>This project strengthened my skills in data preparation, data modeling, DAX, interactive dashboard design, and analytical reasoning.</p>
+    </section>
+    <section class="card">
+      <h2>Tools &amp; Data Source</h2>
+      <p>Power BI | Excel | Power Query | DAX | Pearson Correlation | Exploratory Data Analysis</p>
+      <p><strong>Source:</strong> <a href="https://www.cftc.gov/files/dea/history/deacot2026.zip" target="_blank" rel="noopener noreferrer">CFTC Historical COT Data (2026)</a></p>
+      <p class="note">Price data were collected separately. This case study is exploratory analysis, not investment advice or a trading signal.</p>
+    </section>
+    <a class="button" href="index.html">← Back to Portfolio</a>
+  </main>
+  <footer>Mohamed Yousef | Data Analytics Portfolio</footer>
+</body>
+</html>
