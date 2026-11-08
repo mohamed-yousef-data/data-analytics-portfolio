@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Chemicals Factory | Power BI Dashboard</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f7fb;
+  color: #243247;
+  line-height: 1.7;
+}
+header {
+  background: linear-gradient(120deg, #102c54, #1765a3);
+  color: white;
+  padding: 55px 20px;
+  text-align: center;
+}
+header h1 { margin: 0 0 10px; font-size: 34px; }
+header p { margin: 0; color: #d8eaff; }
+main { max-width: 1150px; margin: auto; padding: 30px 20px; }
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(20,45,75,.08);
+}
+h2 { color: #174d83; margin-top: 0; }
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px,1fr));
+  gap: 15px;
+}
+.metric {
+  background: #102c54;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+.metric strong { display: block; font-size: 27px; }
+.metric span { font-size: 13px; color: #d8eaff; }
+.dashboard-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #dce6f0;
+  display: block;
+}
+.tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.tags span {
+  background: #e4effa;
+  color: #174d83;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.back {
+  display: inline-block;
+  background: #1765a3;
+  color: white;
+  padding: 11px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+footer {
+  background: #102c54;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Water Chemicals Factory</h1>
+  <p>Power BI Performance Dashboard | 2025</p>
+  <p>Sales • Production • Customer & Delivery</p>
+</header>
+
+<main>
+
+<section class="card">
+  <h2>Project Overview</h2>
+  <p>
+    This three-page Power BI project analyzes the
+    operational and commercial performance of a water
+    chemicals factory using a training dataset.
+    It combines sales, production, inventory, delivery,
+    collections, and customer service indicators to
+    support data-driven decision-making.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Key Performance Indicators</h2>
+  <div class="metrics">
+    <div class="metric">
+      <strong>56.43M</strong><span>Total Revenue (SAR)</span>
+    </div>
+    <div class="metric">
+      <strong>16.05M</strong><span>Gross Profit (SAR)</span>
+    </div>
+    <div class="metric">
+      <strong>28.44%</strong><span>Profit Margin</span>
+    </div>
+    <div class="metric">
+      <strong>2,300</strong><span>Total Orders</span>
+    </div>
+    <div class="metric">
+      <strong>97.59%</strong><span>Production Achievement</span>
+    </div>
+    <div class="metric">
+      <strong>50.35%</strong><span>On-Time Delivery</span>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>01 | Sales Overview</h2>
+  <p>
+    Revenue and profitability analysis by month,
+    product, product category, customer, and region.
+  </p>
+  <img class="dashboard-image"
+       src="chemical-sales.png"
+       alt="Sales Overview Power BI Dashboard"
+       loading="lazy">
+</section>
+
+<section class="card">
+  <h2>02 | Production Performance</h2>
+  <p>
+    Planned versus actual production, production
+    achievement, downtime, yield, inventory,
+    and product-level performance.
+  </p>
+  <img class="dashboard-image"
+       src="chemical-production.png"
+       alt="Production Performance Dashboard"
+       loading="lazy">
+</section>
+
+<section class="card">
+  <h2>03 | Customer & Delivery Performance</h2>
+  <p>
+    Order fulfillment, on-time delivery,
+    customer complaints, payment collections,
+    outstanding revenue, and customer performance.
+  </p>
+  <img class="dashboard-image"
+       src="chemical-customers.png"
+       alt="Customer and Delivery Dashboard"
+       loading="lazy">
+</section>
+
+<section class="card">
+  <h2>Tools & Techniques</h2>
+  <div class="tags">
+    <span>Power BI</span>
+    <span>Excel</span>
+    <span>Power Query</span>
+    <span>DAX</span>
+    <span>Data Modeling</span>
+    <span>KPI Development</span>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Project Note</h2>
+  <p>
+    This dashboard was developed for portfolio
+    demonstration and analytical training.
+    The dataset is illustrative and does not
+    represent actual company financial results.
+  </p>
+</section>
+
+<a class="back" href="index.html">Back to Portfolio</a>
+
+</main>
+
+<footer>
+  Mohamed Yousef | Data Analytics Portfolio
+</footer>
+
+</body>
+</html>
